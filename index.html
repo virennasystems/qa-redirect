@@ -1,1 +1,66 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="refresh" content="0; url=https://proton.me/drive/YOUR_FILE_ID_HERE" />
+  <title>Redirecting to VIRENNA QA Report...</title>
+  <meta name="description" content="Access the VIRENNA Quality Assurance Report via secure ProtonDrive." />
+  <meta property="og:title" content="VIRENNA Quality Assurance Report" />
+  <meta property="og:description" content="Redirect to verified ProtonDrive-hosted medical QA documentation." />
+  <meta property="og:image" content="https://qa.virenna.org/preview.png" />
+  <meta property="og:url" content="https://qa.virenna.org" />
+  <meta name="theme-color" content="#0044cc" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      text-align: center;
+      padding: 3rem 1rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .container { max-width: 600px; margin: 0 auto; }
+    .qr { margin-top: 1.5rem; }
+    .fallback { margin-top: 2rem; font-size: 1rem; }
+    .hash {
+      font-size: 0.85rem;
+      color: #444;
+      margin-top: 2.5rem;
+      word-break: break-word;
+    }
+    a {
+      color: #0044cc;
+      text-decoration: underline;
+    }
+    a:hover, a:focus {
+      background-color: #e5f0ff;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="Redirect information">
+    <h1>VIRENNA Quality Assurance Report</h1>
+    <p>You are being redirected to our encrypted ProtonDrive archive.</p>
+
+    <div class="qr">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://qa.virenna.org"
+           alt="QR Code to access the QA document via mobile" width="180" height="180" />
+    </div>
+
+    <div class="fallback">
+      <p>If you are not redirected, click the button below:</p>
+      <p><a href="https://proton.me/drive/YOUR_FILE_ID_HERE" target="_blank" rel="noopener">Open QA Report</a></p>
+    </div>
+
+    <div class="hash" aria-label="SHA-256 verification block">
+      Optional SHA-256 checksum:<br />
+      <code>[paste your hash here]</code>
+    </div>
+  </main>
+</body>
+</html>
+
